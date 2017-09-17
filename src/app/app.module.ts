@@ -7,6 +7,22 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
+//servicio de angular en la nube
+import { CloudModule } from '@ionic/cloud-angular';
+//configuracion
+import { cloudSettings } from "../config/ionic.config";
+
+//
+//import { Push} from '@ionic/cloud-angular';
+
+/*const cloudSettings: CloudSettings = {
+  'core': {
+    'app_id': 'aec6af17'
+  }
+};
+*/
+
+
 @NgModule({
   declarations: [
     MyApp,
@@ -14,7 +30,8 @@ import { HomePage } from '../pages/home/home';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    CloudModule.forRoot(cloudSettings)
   ],
   bootstrap: [IonicApp],
   entryComponents: [

@@ -2,5 +2,7 @@
   "name": "notificaciones_seccion9",
   "app_id": "aec6af17",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {
+    "cordova": {}
+  }
 }
